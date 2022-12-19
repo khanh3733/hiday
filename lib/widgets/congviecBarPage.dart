@@ -1,9 +1,7 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
-class HomeAppBar extends StatelessWidget {
-  const HomeAppBar({super.key});
+class congviecBar extends StatelessWidget {
+  const congviecBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +55,7 @@ class HomeAppBar extends StatelessWidget {
             margin: EdgeInsets.only(top: 40),
             padding: EdgeInsets.only(bottom: 15),
             child: Text(
-              "Tài chính",
+              "Công việc",
               style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,

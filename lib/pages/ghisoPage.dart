@@ -1,27 +1,24 @@
-// ignore_for_file: prefer_const_constructors, avoid_print
-
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:hiday/widgets/HomeAppBar.dart';
-import 'package:hiday/widgets/HomeAppPage.dart';
+import 'package:hiday/widgets/ghisoAppBarPage.dart';
+import 'package:hiday/widgets/ghisoAppHomePage.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class ghisoPage extends StatelessWidget {
+  const ghisoPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        // ignore: prefer_const_literals_to_create_immutables
         children: [
-          HomeAppBar(),
-          HomeAppPage(),
+          ghisoAppBarPage(),
+          ghisoAppHomePage(),
         ],
       ),
       bottomNavigationBar: CurvedNavigationBar(
         backgroundColor: Colors.transparent,
         onTap: (index) {},
-        height: 70,
+        height: 60,
         color: Color.fromARGB(255, 52, 119, 54),
         // ignore: prefer_const_literals_to_create_immutables
         items: [
